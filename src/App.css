@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.alocate {
+  position: absolute;
+  top: 40vh;
+  left: 40.9vw;
+  gap: 20px;
+  background: white;
+  z-index: 10;
+  padding: 19px;
+  border-radius: 28px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.unvisible {
+  visibility: hidden !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.unvisible {
+  visibility: visible !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.alocate_minimilst {
+  gap: 2px;
+  background: white;
+  z-index: 1000;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+
+.white {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.sidebar_header {
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header {
+  background-color: white;
+}
+
+.add_button {
+  background: #6bc395;
+  color: white;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid #6bc395;
+  z-index: 10;
+  top: 35%;
+  left: 50%;
+  position: absolute;
+}
+
+.add_button_minimal {
+    background: #6bc395;
+  color: white;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  margin: 4px;
+  border: 1px solid #6bc395;
+  z-index: 10;
+}
+
+
+
+.run_button {
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 6px;
+}
+
+.updatenode__controls {
+  z-index: 4;
+}
+
+
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
