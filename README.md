@@ -19,5 +19,7 @@ The application is built with the following dependencies:
 
 ## Setup
 1 - Clone the repository in your workspace `git clone https://github.com/hassanrbh/backend-api`
+
 2 - npm install
+
 3 - npm run start
